@@ -1,32 +1,4 @@
-# Digital Logic Experiments
-
-This repository contains Verilog code for various digital logic experiments. Each experiment demonstrates the implementation of fundamental combinational and sequential circuits.
-
----
-
-## Experiment 1: Study and Verify the Truth Table of Various Logic Gates
-
 ```verilog
-module logic_gates;
-   reg a, b;
-   wire not_a, and_ab, or_ab, nand_ab, nor_ab, xor_ab, xnor_ab;
-
-   not (not_a, a);
-   and (and_ab, a, b);
-   or (or_ab, a, b);
-   nand (nand_ab, a, b);
-   nor (nor_ab, a, b);
-   xor (xor_ab, a, b);
-   xnor (xnor_ab, a, b);
-
-   initial begin
-       $display("A B | NOT AND OR NAND NOR XOR XNOR");
-       a = 0; b = 0; #1 $display("%b %b | %b   %b   %b   %b    %b   %b    %b", a, b, not_a, and_ab, or_ab, nand_ab, nor_ab, xor_ab, xnor_ab);
-       a = 0; b = 1; #1 $display("%b %b | %b   %b   %b   %b    %b   %b    %b", a, b, not_a, and_ab, or_ab, nand_ab, nor_ab, xor_ab, xnor_ab);
-       a = 1; b = 0; #1 $display("%b %b | %b   %b   %b   %b    %b   %b    %b", a,
-
-
-
 
 Experiment 1: To study and verify the truth table of various logic gates.
 
@@ -279,6 +251,5 @@ module async_counter_tb;
        end
    end
 endmodule
-
 
 
