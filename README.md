@@ -1,4 +1,5 @@
 Experiment 1: To study and verify the truth table of various logic gates.
+
 module logic_gates;
    reg a, b;
    wire not_a, and_ab, or_ab, nand_ab, nor_ab, xor_ab, xnor_ab;
